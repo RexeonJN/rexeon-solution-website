@@ -1,0 +1,180 @@
+{% extends 'rexeonapp/Navbar.html' %}
+<!DOCTYPE html>
+{%load static%}
+ {% block css %} 
+ <link rel="stylesheet" href="{%static "css/home.css"%}"> 
+ {%endblock%} 
+ {% block child_block%}
+<section>
+  <div class="jumbotron text-white jumbotron-image shadow p-4">
+    <div class="text-center text p-3">
+      <h1 class="mb-2">Our collaboration ensures your Reputation</h1>
+
+      <h5 class="mb-4">Testing services and Certifications all at one place</h5>
+
+      <a class="btn btn-outline-info m-4 button p-2"> Learn More </a>
+      <a class="btn btn-outline-info m-4 button p-2" > Contact Us </a>
+    </div>
+  </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row m-4">
+            
+            <div class="col m-2">
+    <div class="card h-100 shadow">
+        <div class="card-body">
+            <img src="https://img.icons8.com/fluency/48/26e07f/cash.png" class="pb-4"/>
+          <h6 class="card-subtitle mb-2 fw-bolder pb-4">AFFORDABLE</h6>
+          <p class="card-text">We provide Testing Services and Certifications at a very affortable cost</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col m-2">
+      <div class="card h-100 shadow" >
+        <div class="card-body">
+            <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/ffffff/external-emoji-emoji-justicon-lineal-color-justicon-2.png" class="pb-4"/>
+          <h6 class="card-subtitle mb-2 fw-bolder pb-4">HAPPY CUSTOMERS</h6>
+          <p class="card-text">We are always at your service by just a phone call away.Providing the best service is our topmost priority</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col m-2">
+      <div class="card h-100 shadow">
+        <div class="card-body">
+            <img src="https://img.icons8.com/ios-filled/50/26e07f/star.png" class="pb-4"/>
+          <h6 class="card-subtitle mb-2 fw-bolder pb-4">CLASS ONE SERVICE</h6>
+          <p class="card-text">We provide top class service.So,let us take care of your reputation</p>
+        </div>
+      </div>
+    </div>
+
+</div>
+    </div>
+</section>
+
+<section>
+    <h2 class="text-center offer">What do we offer</h2>
+    <div class="container">
+        <div class="row m-3">
+
+            <div class="col m-2">
+                <div class="card p-2 h-100 shadow">
+                    <div class="card-body">
+                        <img src="https://img.icons8.com/ios-filled/50/26e07f/checked-2.png" class="pb-4"/>
+                      <h6 class="card-subtitle mb-2">TESTING SERVICES</h6>
+                      <p class="card-text">The core activity provided by us,amidst various other activities,is testing of different types of food and fuel items.Other than food items,we also provide mineral,liquid fuel and biomass testing.</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col m-2">
+                <div class="card p-2 h-100 shadow">
+                    <div class="card-body">
+                        <img src="https://img.icons8.com/ios-filled/50/26e07f/diploma.png" class="pb-4"/>
+                      <h6 class="card-subtitle mb-2">CERTIFICATION</h6>
+                      <p class="card-text">Our start-up adopts a proactive approach where we approach every producer and supplier in order to provide them the information they need.</p>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="text-center offer m-4">Offered Services And Also In Progress</h2>
+    <div class="container">
+        <div class="row m-4">
+            <div class="col text-center fw-bolder" id="text">
+                <h3>24</h3>
+                <p >Testing Services provided</p>
+            </div>
+            <div class="col text-center fw-bolder" id="text">
+               <h3>06</h3>
+               <p>Certifications provided</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h4 class="text-center offer m-4">Our Happy Clients</h4>
+        <h4 class="fw-bold text-decoration-underline">Our Satisfied Client says</h4>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row m-3">
+
+                    <div class="col m-2">
+                        <div class="card cardc p-4 h-100 shadow">
+                            <div class="card-body">
+                              <p class="card-text">The service was unexpectedly upto the point.Having such facility in our vicinity is beneficial for us.</p>
+                              <h5 class="card-subtitle mb-2 text-center">Ashok kumar</h5>
+                              <p class="text-center text-muted">Assistant Manager</p>
+                            </div>
+                          </div>
+                    </div>
+        
+                    <div class="col m-2">
+                        <div class="card cardc p-4 h-100 shadow">
+                            <div class="card-body">
+                              <p class="card-text">Getting such affordable services nearby, helped us reduce our expenses.Looking Forward to get their services in near future as well.</p>
+                              <h5 class="card-subtitle mb-2 text-center">Dinesh Pathak</h5>
+                              <p class="text-center text-muted">Operation Incharge</p>
+                            </div>
+                          </div>
+                    </div>
+        
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row m-3">
+
+                    <div class="col m-2">
+                        <div class="card cardc p-4 h-100 shadow">
+                            <div class="card-body">
+                              <p class="card-text">Testing services customized as per our requirement.Hope they provide us all types of testing in upcoming days.</p>
+                              <h5 class="card-subtitle mb-2 text-center">Sudip Thakur</h5>
+                              <p class="text-center text-muted">Owner</p>
+                            </div>
+                          </div>
+                    </div>
+        
+                    <div class="col m-2">
+                        <div class="card cardc p-4 h-100 shadow">
+                            <div class="card-body">
+                              <p class="card-text">We were ignorant about the existance of such facilities.They not only provided information but also helped us fetching those facilities.</p>
+                              <h5 class="card-subtitle mb-2 text-center">Sushil Krishna</h5>
+                              <p class="text-center text-muted">Sole proprieter</p>
+                            </div>
+                          </div>
+                    </div>
+        
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+       </div>
+</section>
+{%include 'rexeonapp/footer.html'%}
+{%endblock%}
+

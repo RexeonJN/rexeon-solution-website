@@ -1,0 +1,41 @@
+.jumbotron-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1577760258779-e787a1733016?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+}
+.text{
+    margin-top: 8% !important;
+    font-family: 'Roboto Slab', serif;
+}
+
+.button{
+    font-size: 1.3rem !important;
+    border-radius: 50px !important;
+}
+.card-subtitle{
+    font-weight: bolder !important;
+}
+.card{
+    border-radius: 40px !important;
+    font-family: 'Roboto Slab', serif;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.offer{
+    font-family: 'Roboto Slab', serif;
+    color: #0dcaf0;
+    /* font-weight: bold; */
+    text-decoration: underline;
+}
+#text{
+    font-family: 'Roboto Slab', serif;
+}
+.cardc:hover{
+background-color: white !important;
+}
+.cardc{
+    background-color: #0dcaf0 !important;
+}
