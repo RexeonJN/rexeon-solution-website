@@ -6,3 +6,6 @@ def home(request):
 
 def about(request):
     return render(request,'rexeonapp/about.html')
+
+def blog(request):
+    return render(request,'rexeonapp/blog.html')

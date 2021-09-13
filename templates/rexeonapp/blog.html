@@ -1,0 +1,27 @@
+{% extends 'rexeonapp/Navbar.html' %}
+<!DOCTYPE html>
+{%load static%} 
+{% block css %}
+<link rel="stylesheet" href="{%static "css/blog.css"%}"> 
+ {%endblock%} 
+ {% block child_block%}
+
+ <div class="blogmain">
+ <section>
+    <h2 class="text-center offer mt-5">OUR BlOG</h2>
+    <p class="text-center card-subtitle pb-4">Check Out Our Latest Blog Post</p>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            1 of 2
+          </div>
+          <div class="col">
+            2 of 2
+          </div>
+        </div>
+        </div>
+ </section>
+</div>
+
+{%include 'rexeonapp/footer.html'%} 
+{%endblock%}

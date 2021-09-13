@@ -1,24 +1,228 @@
 {% extends 'rexeonapp/Navbar.html' %}
 <!DOCTYPE html>
-{%load static%}
- {% block css %} 
- <link rel="stylesheet" href="{%static "css/about.css"%}"> 
- {%endblock%} 
- {% block child_block%}
- <section>
-<h1 class="text-center offer mt-5">About Us</h1>
-<div class="container">
-    <div class="row justify-content-md-center">
+{%load static%} {% block css %} <link rel="stylesheet" href="{%static "css/about.css"%}"> {%endblock%} {% block child_block%}
+<div class="aboutmain">
+<section>
+    <h1 class="text-center offer mt-5">About Us</h1>
+    <div class="container">
+      <div class="row justify-content-md-center">
         <div class="col-md-auto p-4">
-            <img src="https://rexeonsolutions.in/about.jpg" alt="" width="100%" height="100%">
+          <img
+            src="https://rexeonsolutions.in/about.jpg"
+            alt=""
+            width="100%"
+            height="100%"
+          />
         </div>
       </div>
-    <div class="about d-flex justify-content-between">
-        <img src="https://img.icons8.com/ios-filled/50/26e07f/double-tick.png" width="3%" height="3%" class='mt-3' />
-      <p class="p-3">Rexeon Solutions Private Limited provides NABL accredited testing services and certifications like NABL,NABCB and others . It has been established amidst the outbreak of Covid-19 on 23rd of June. It is headquartered in Dhanbad, Jharkhand. We are a team of technically competent manpower having combined industry work experiences of over 8 years in diverse fields.</p>
-    </div>
+      <div class="about d-flex">
+        <img
+          src="https://img.icons8.com/ios-filled/50/26e07f/double-tick.png"
+          width="30px"
+          height="30px"
+          class="mt-3"
+        />
+        <p class="p-3">
+          Rexeon Solutions Private Limited provides NABL accredited testing
+          services and certifications like NABL,NABCB and others . It has been
+          established amidst the outbreak of Covid-19 on 23rd of June. It is
+          headquartered in Dhanbad, Jharkhand. We are a team of technically
+          competent manpower having combined industry work experiences of over 8
+          years in diverse fields.
+        </p>
+      </div>
+      <div class="about d-flex justify-content-between">
+        <img
+          src="https://img.icons8.com/ios-filled/50/26e07f/double-tick.png"
+          width="30px"
+          height="30px"
+          class="mt-3"
+        />
+        <p class="p-3">
+          Rexeon Solutions has a support of vast number of labs specializing in
+          different fields. These fields include food,water, mineral, soil,
+          environmental and many more. Our collaboration with these labs allows
+          our clients to avail testing service at the same price, thereby
+          providing them options according to their requirements.
+        </p>
+      </div>
+
+      <div class="about d-flex">
+        <img
+          src="https://img.icons8.com/ios-filled/50/26e07f/double-tick.png"
+          width="30px"
+          height="30px"
+          class="mt-3"
+        />
+        <p class="p-3">
+          With the help of these labs, the products are analyzed as per the
+          global standards which allow our client’s business to be competitive.
+          Other than testing, we also help them to get all the necessary
+          certifications (such as ISO, FSSAI, etc.) for the growth of their
+          business. Rexeon provides state-of-art analysis with high precision
+          and accuracy using modern technology. Our associated labs are
+          accredited by ISO and National Accreditation Board for Testing and
+          Calibration. Our most knowledgeable and experienced hands will offer
+          customized solutions.
+        </p>
+      </div>
+
+      <div class="about d-flex">
+        <img
+          src="https://img.icons8.com/ios-filled/50/26e07f/double-tick.png"
+          width="30px"
+          height="30px"
+          class="mt-3"
+        />
+        <p class="p-3">
+          RSPL professionalism is firmly anchored with our Salient core values
+          which are:
+        </p>
+      </div>
+      <div>
+        <ul class="list" >
+          <li>
+            <img
+              src="https://img.icons8.com/emoji/48/26e07f/diamond-with-a-dot-emoji.png"
+              width="20px"
+              height="20px"
+            />
+            Quality of service
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/emoji/48/26e07f/diamond-with-a-dot-emoji.png"
+              width="20px"
+              height="20px"
+            />
+            Integrity
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/emoji/48/26e07f/diamond-with-a-dot-emoji.png"
+              width="20px"
+              height="20px"
+            />
+            Integrity
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/emoji/48/26e07f/diamond-with-a-dot-emoji.png"
+              width="20px"
+              height="20px"
+            />
+            Independence
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/emoji/48/26e07f/diamond-with-a-dot-emoji.png"
+              width="20px"
+              height="20px"
+            />
+            Impartiality
+          </li>
+        </ul>
+        <div class="d-flex">
+        <img
+          src="https://img.icons8.com/ios-filled/50/26e07f/double-tick.png"
+          width="30px"
+          height="30px"
+          class="mt-3"
+        />
+        <p class="p-3">RSPL provides services which are customer focused. Our services are customized as per our customer’s requirements. Our efforts are focused on making our services efficient, value adding and affordable all at same place.“Our collaboration ensures your reputation”.</p>
+      </div>
+      </div>
     </div>
 </section>
-{%include 'rexeonapp/footer.html'%}
-{%endblock%}
 
+<section>
+  <div class="container">
+    <div class="row m-3">
+        <div class="col m-2">
+            <div class="card p-2 h-100 shadow">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2">OUR MISSION</h6>
+                  <p class="card-text">Our mission is to ease the access of testing for even small scale and micro enterprises. We also aim to provide them the required certifications needed to grow their business and help them in their decision making.</p>
+                </div>
+              </div>
+        </div>
+
+        <div class="col m-2">
+            <div class="card p-2 h-100 shadow">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2">OUR VISION</h6>
+                  <p class="card-text">Rexeon solution’s vision is to spread the culture of testing among all manufacturers and producers. We aim to assist manufacturers and food producers provide standard and healthy products to their customers.</p>
+                </div>
+              </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<section>
+  <h2 class="text-center offer mt-5">OUR OBJECTIVES</h2>
+  <div class="container">
+    <div class="row m-3">
+        <div class="col m-2">
+            <div class="card p-2 h-100 shadow">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2">QUALITY</h6>
+                  <p class="card-text">Provide precise and accurate measurements of products at reasonable rate without compromising the quality of testing.</p>
+                </div>
+              </div>
+        </div>
+
+        <div class="col m-2">
+            <div class="card p-2 h-100 shadow">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2">RELATIONSHIP</h6>
+                  <p class="card-text">Establishing a long-term relationship with our clients and associates and act as a catalyst in their growth by assisting them in their decision making.</p>
+                </div>
+              </div>
+        </div>
+
+        <div class="col m-2">
+          <div class="card p-2 h-100 shadow">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2">HUMAN CAPITAL</h6>
+                <p class="card-text">Build a pool of skilled workforce by developing and training passionate people and organization with the help of various training programs.</p>
+              </div>
+            </div>
+      </div>
+
+    </div>
+
+    <div class="row m-3">
+      <div class="col m-2">
+          <div class="card p-2 h-100 shadow">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2">PRESENCE</h6>
+                <p class="card-text">Increasing our presence so as to promote and assist testing and certification needs of MSME sectors who are unaware of the benefits of such services.</p>
+              </div>
+            </div>
+      </div>
+
+      <div class="col m-2">
+          <div class="card p-2 h-100 shadow">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2">INNOVATIONS</h6>
+                <p class="card-text">Continuously strive for innovations either by investing in development of facilities required for testing products or by utilizing new technologies to enhance the service offered.</p>
+              </div>
+            </div>
+      </div>
+
+      <div class="col m-2">
+        <div class="card p-2 h-100 shadow">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2">PROACTIVE APPROACH</h6>
+              <p class="card-text">Adopt a proactive approach by approaching industries of MSME sector and providing them the information they need either in testing or certifications.</p>
+            </div>
+          </div>
+    </div>
+
+  </div>
+</div>
+</section>
+</div>
+{%include 'rexeonapp/footer.html'%} {%endblock%}

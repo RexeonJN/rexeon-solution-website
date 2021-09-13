@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Slab&display=swap');
 .jumbotron-footer {
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,234,253,1) 100%);
     /* height: 15rem; */
+    font-family: 'Roboto Slab', serif;
 }
 .icon:hover{
     transform: scale(1.3);
