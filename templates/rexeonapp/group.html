@@ -1,0 +1,66 @@
+{% extends 'rexeonapp/Navbar.html' %}
+<!DOCTYPE html>
+{%load static%} {% block css %} <link rel="stylesheet" href="{%static "css/group.css"%}"> {%endblock%} {% block child_block%}
+
+<div class="groupmain">
+  <h1 class="gp text-center fadeInLeftBig">Welcome To Our Group</h1>
+  <section>
+    <div class="container">
+      <div class="row m-3">
+        <div class="col m-2">
+          <div class="card p-2 h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-subtitle mb-3">Rexeon Solutions Pvt. Ltd.</h5>
+              <p class="card-text">
+                Last but not the least, this is us. We provide a host of
+                services. These services ranges from testing services to getting
+                certifications for greenfield projects. We are leveraging modern
+                technologies to provide custom services to our clients. We have
+                collaboration with large number of testing labs who assist us in
+                providing testing services to our clients.
+                <b
+                  >The services we provide to our clients are at the same price
+                  our partnering labs would provide with additional benefits</b
+                >
+                .Our clients have various options with them at their doorstep.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col m-2">
+          <div class="card p-2 h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-subtitle mb-3">Geocoal Engineering Pvt.Ltd.</h5>
+              <p class="card-text">
+                GCEPL specializes in inspection, testing and certification. It
+                is one of the leading NABL accredited labs which has expertise
+                in testing of coal and other minerals. GCEPL has been serving
+                well known government and private firms since 2012. It is the
+                oldest venture in our group and has poured its experience into
+                other enterprises of our group. It has provided quality
+                assurance to hundreds of clients.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col m-2">
+          <div class="card p-2 h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-subtitle mb-3">Rainbow Enterprise</h5>
+              <p class="card-text">
+                This enterprise started as a travel and transport business.
+                However, it has expanded to cater supply chain business. Its
+                presence has helped other enterprises to provide services to
+                regions which are far away.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+{%include 'rexeonapp/footer.html'%} {%endblock%}

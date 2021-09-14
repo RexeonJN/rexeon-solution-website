@@ -1,0 +1,66 @@
+{% extends 'rexeonapp/Navbar.html' %}
+<!DOCTYPE html>
+{%load static%} {% block css %} <link rel="stylesheet" href="{%static "css/service.css"%}"> {%endblock%} {% block child_block%}
+
+<div class="servicemain">
+  <h2 class="text-center m-4 fw-bold text-decoration-underline">
+    Benefits one can get from availing our services
+  </h2>
+  <div class="container">
+    <div class="row m-3">
+      <div class="col-sm m-2">
+        <img
+          src="https://rexeonsolutions.in/testing.jpg"
+          alt=""
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div class="col-sm m-2 detail text-center">
+        <h2>Testing Services</h2>
+        <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">View Details</a>
+      </div>
+    </div>
+
+    <div class="row m-3">
+      <div class="col-sm m-2 detail text-center">
+        <h2>Certifications and Trainings Provided By Us</h2>
+        <a class="btn btn-info" href="#" role="button">View Details</a>
+      </div>
+
+      <div class="col-sm m-2">
+        <img
+          src="https://rexeonsolutions.in/Quality.JPG"
+          alt=""
+          width="100%"
+          height="100%"
+        />
+      </div>
+    </div>
+
+    <div class="row m-3">
+      <div class="col-sm m-2">
+        <img
+          src="https://lform.com/cms/resources/media/2021/01/custom-web-development-app-1184x694.jpg"
+          alt=""
+          width="100%"
+          height="100%"
+        />
+      </div>
+
+      <div class="col-sm m-2 detail text-center">
+        <h2>Web and app Development</h2>
+        <a class="btn btn-info" href="#" role="button">View Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+     
+    </div>
+  </div>
+
+</div>
+
+{%include 'rexeonapp/footer.html'%} {%endblock%}
