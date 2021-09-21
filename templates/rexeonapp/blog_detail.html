@@ -1,0 +1,27 @@
+{% extends 'rexeonapp/Navbar.html' %}
+<!DOCTYPE html>
+{%load static%} 
+{% block css %}
+<link rel="stylesheet" href="{%static "css/blog_detail.css"%}"> 
+ {%endblock%} 
+ {% block child_block%}
+
+ <div class="blogmain">
+     <h2 class="text-center text-primary text-decoration-underline fw-bold m-3"> {{ object.title }}</h2>
+     <section>
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-lg-10 m-4">
+             <img src="{{blog.image.url}}" alt="" width="100%" height="100%"> 
+            </div>
+          </div>
+        {{ object.body | safe }}
+      <center> <a href="/blog" class="btn btn-primary m-4">Back to blog</a></center> 
+      </section>
+</div>
+
+{%include 'rexeonapp/footer.html'%} 
+{%endblock%}
+<!-- /home/alka/rexeonsolutions/media/uploads/marine.jpeg -->
+
+<!-- 9199699720 -->

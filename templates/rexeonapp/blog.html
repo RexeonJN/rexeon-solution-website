@@ -11,65 +11,29 @@
     <h2 class="text-center offer mt-5">OUR BlOG</h2>
     <p class="text-center card-subtitle pb-4">Check Out Our Latest Blog Post</p>
     <div class="container">
-        <div class="row m-3">
-          <div class="col-sm m-2">
-            <div class="contain">
-                <img src="https://www.kokilabenhospital.com/blog/wp-content/uploads/2019/06/Brain-Tumor-Day.png" alt="Avatar" class="image" width="100%">
-                <p class="text-center blog-name">World Brain Tumor Day</p>
+        <div class="row">
+            {% for blog in blog_list %}
+            <div class="contain col-lg-4 col-md-6 col-sm-12 col-12">
+                <img src="{{blog.image.url}}" alt="Avatar" class="image" width="100%">
+                <p class="text-center blog-name">{{blog.title}}</p>
                 <div class="middle">
                   <div class="text">
-                      <h5 class="card-subtitle">World Brain-Tumor-Day</h5>
+                      <h5 class="card-subtitle">{{blog.title}}</h5>
                       <p>BY- TEAM REXEON-SOLUTIONS</p>
-                      <a href="">View Post</a>
+                      <a class="btn btn-primary" href="{{blog.get_absolute_url}}" role="button">View Post</a>
                   </div>
                 </div>
               </div>
-          </div>
-          <div class="col-sm m-2">
-            <div class="contain">
-                <img src="https://sourcingjournal.com/wp-content/uploads/2017/02/raceforwater_pollution_christophelaunayweb-e1487876549354.jpg" alt="Avatar" class="image" width="100%">
-                <p class="text-center blog-name">MARINE POLLUTION</p>
-                <div class="middle">
-                  <div class="text">
-                      <h5 class="card-subtitle">Marine Pollution</h5>
-                      <p>BY- TEAM REXEON-SOLUTIONS</p>
-                      <a href="">View Post</a>
-                  </div>
-                </div>
-              </div>
-          </div>
+              {%endfor%}
         </div>
-
-        <div class="row m-3">
-            <div class="col-sm m-2">
-              <div class="contain">
-                  <img src="https://www.kokilabenhospital.com/blog/wp-content/uploads/2019/06/Brain-Tumor-Day.png" alt="Avatar" class="image" width="100%">
-                  <p class="text-center blog-name">World Brain Tumor Day</p>
-                  <div class="middle">
-                    <div class="text">
-                        <h5 class="card-subtitle">World Brain-Tumor-Day</h5>
-                        <p>BY- TEAM REXEON-SOLUTIONS</p>
-                        <a href="">View Post</a>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="col-sm m-2">
-              <div class="contain">
-                  <img src="https://sourcingjournal.com/wp-content/uploads/2017/02/raceforwater_pollution_christophelaunayweb-e1487876549354.jpg" alt="Avatar" class="image" width="100%">
-                  <p class="text-center blog-name">MARINE POLLUTION</p>
-                  <div class="middle">
-                    <div class="text">
-                        <h5 class="card-subtitle">Marine Pollution</h5>
-                        <p>BY- TEAM REXEON-SOLUTIONS</p>
-                        <a href="">View Post</a>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
+        {% include 'rexeonapp/pagination.html' with page=page_obj%}
         </div>
+      
  </section>
+
+ <!-- 6207396702
+ Naznee@786 -->
+
 </div>
 
 {%include 'rexeonapp/footer.html'%} 

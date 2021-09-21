@@ -2,33 +2,107 @@
 <!DOCTYPE html>
 {%load static%} {% block css %} <link rel="stylesheet" href="{%static "css/contact.css"%}"> {%endblock%} {% block child_block%}
 
-<div class="contactmain">
-    <h2 class="text-center fw-bold text-decoration-underline">Connect With Us</h2>
-    <p class="text-center"> We would love to respond to your queries.
-        Feel free to get in touch with us.</p>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm m-2">
-                <div class="d-flex">
-                    <img
-                      src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/64/4a90e2/external-message-design-thinking-flatart-icons-solid-flatarticons.png"
-                    />
-                    <div class="p-2">
-                        <h2 class="text-info fw-bold">Get In Touch With Us</h2>
-                        <p>
-                            Leave your message and we'll get back to you shortly.
-                        </p>
-                    </div>
-                    
-                  </div>
-             <!-- <h2 class="text-info fw-bold"><img src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/64/4a90e2/external-message-design-thinking-flatart-icons-solid-flatarticons.png"/> Get In Touch with Us</h2>
-             <p>Leave your message and we'll get back to you shortly.</p>
-            </div> -->
-            <div class="col-sm m-2">
+<div class="contactmain container">
+  <h2 class="text-center fw-bold text-decoration-underline m-4">
+    Connect With Us
+  </h2>
+  <p class="text-center">
+    We would love to respond to your queries. Feel free to get in touch with us.
+  </p>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm container-sm mb-4">
+        <h2 class="text-info fw-bold text-decoration-underline">
+          <img
+            src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/64/4a90e2/external-message-design-thinking-flatart-icons-solid-flatarticons.png"
+          />
+          Get In Touch with Us
+        </h2>
+        <p>Leave your message and we'll get back to you shortly.</p>
+        <form method="post">
+          <!-- <label for="name" class="fw-bold"
+            >Your Name: <span class="text-danger">*</span> </label
+          ><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="input_field m-3 p-2"
+            placeholder="Your Name..."
+          /><br />
+          <label for="email" class="fw-bold">
+            Your Email: <span class="text-danger">*</span></label
+          ><br />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            class="input_field m-3 p-2"
+            placeholder="Your Email..."
+          /><br />
+          <label for="contact" class="fw-bold"
+            >Contact No: <span class="text-danger">*</span></label
+          ><br />
+          <input
+            type="text"
+            id="contact"
+            name="conatct"
+            class="input_field m-3 p-2"
+            placeholder="Contact No..."
+          /><br />
+          <label for="query" class="fw-bold"
+            >Queries: <span class="text-danger">*</span></label
+          ><br />
+          <input
+            type="text"
+            id="query"
+            name="query"
+            class="input_field m-3 p-2"
+            placeholder="Write your Queries here..."
+          />
+          <br />
+          <button type="button" class="btn btn-info m-4">Submit</button> -->
+          {{form.as_p}}
+          {%csrf_token%}
+          <input type="submit" class="btn btn-info m-4">
+        </form>
+      </div>
 
-            </div>
+      <div class="col-sm container-sm">
+        <div class="card mb-4 shadow cardc">
+          <div class="card-body">
+            <h5 class="card-title mb-3">Reach Us</h5>
+            <p class="card-text">
+             Email :-  <a href="mailto:rexeonspl@gmail.com" class="card-link">rexeonspl@gmail.com</a>
+            </p>
+            <p class="card-text">
+                Contact No :-  <a href="tel:+917360073897" class="card-link">+91 9661480713</a>
+               </p>
+               <p class="card-text">
+                Address :-  Shop No.209,City Centre Luby Circular Road
+                Dhanbad(JH)Pin-826001
+               </p>
+          </div>
         </div>
+        
+       <div>
+        <div class="mapouter mb-4">
+            <div class="gmap_canvas">
+              <iframe
+                class="gmap_iframe"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=rexeon solutions&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </div>
 </div>
 
 {%include 'rexeonapp/footer.html'%} {%endblock%}

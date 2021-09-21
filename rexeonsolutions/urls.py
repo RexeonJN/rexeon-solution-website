@@ -16,14 +16,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from rexeonapp import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
     path('about/', views.about),
-    path('blog/', views.blog),
+    path('blog/', views.blog.as_view(), name = 'blog'),
     path('group/', views.group),
     path('services/', views.service),
     path('career/', views.career),
     path('contact/', views.contact),
-]
+    path('<int:year>/<int:month>/<int:day>/<slug:slug>/', views.blog_detail.as_view(), name='blog_detail'),
+    path('apply/', views.apply_form), 
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

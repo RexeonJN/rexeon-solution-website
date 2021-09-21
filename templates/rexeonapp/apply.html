@@ -1,0 +1,72 @@
+{% extends 'rexeonapp/Navbar.html' %}
+<!DOCTYPE html>
+{%load static%} {% block css %} <link rel="stylesheet" href="{%static "css/apply.css"%}"> {%endblock%} {% block child_block%}
+<div class="main">
+       <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8 m-2 container-sm ">
+                <h1 class="gp text-center fadeInLeftBig">Build Your Career With Us</h1>
+            <!-- <p class="fw-bold text-decoration-underline">Leave your message and we'll get back to you shortly.</p> -->
+            <form method="post" enctype="multipart/form-data">
+              <!-- <label for="fname" class="fw-bold"
+                >First Name: <span class="text-danger">*</span> </label
+              ><br />
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                class="input_field m-2 p-2"
+                placeholder="Your First Name..."
+              /><br />
+              <label for="lname" class="fw-bold"
+                >Last Name: <span class="text-danger">*</span> </label
+              ><br />
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                class="input_field m-2 p-2"
+                placeholder="Your Last Name..."
+              /><br />
+              <label for="email" class="fw-bold">
+                Your Email: <span class="text-danger">*</span></label
+              ><br />
+              <input
+                type="text"
+                id="email"
+                name="email"
+                class="input_field m-2 p-2"
+                placeholder="Your Email..."
+              /><br />
+              <label for="contact" class="fw-bold"
+                >Contact No: <span class="text-danger">*</span></label
+              ><br />
+              <input
+                type="text"
+                id="contact"
+                name="conatct"
+                class="input_field m-2 p-2"
+                placeholder="Contact No..."
+              /><br />
+              <label for="file" class="fw-bold"
+                >Resume: <span class="text-danger">*</span></label
+              ><br />
+              <input
+                type="file"
+                id="file"
+                name="file"
+                class="m-2 p-2"
+              />
+              <br /> 
+              <button type="button" class="btn btn-info m-4">Submit</button>-->
+              {{form.as_p}}
+              {%csrf_token%}
+              <input type="submit" class="btn btn-info m-4">
+            </form>
+          </div>
+          <div class="col-lg-2"></div>
+          </div>
+       </div>
+</div>
+{%include 'rexeonapp/footer.html'%} {%endblock%}
